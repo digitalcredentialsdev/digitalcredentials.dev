@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_developer-avatar_f6ac.svg').default,
     description: (
       <>
-        Developer guidance for issuing and verifying digital credentials using the Digital Credentials API and OpenID4VC.
+        Developer guidance for issuing and verifying digital credentials using the Digital Credentials API and OpenID for Verifiable Presentations.
       </>
     ),
   },
