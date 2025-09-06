@@ -5,26 +5,16 @@ hide_table_of_contents: true
 
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
+import EcosystemSupportTable from "@site/src/components/EcosystemSupportTable";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 # Ecosystem Support
 
 <Tabs groupId="support-matrix" className="unique-tabs" queryString>
   <TabItem value="dc-api" label="Digital Credentials API (Web)" default>
     The Digital Credentials Web Platform API
-    
-    |            | **Chrome** | **Edge** | **Firefox** | **Safari** |
-    |------------|------------|----------|-------------|------------|
-    | <FontAwesomeIcon icon="fa-brands fa-android" fixedWidth /> Android    | <center><FontAwesomeIcon icon="fa-solid fa-flask-vial" color="green" /></center> | <center><FontAwesomeIcon icon="fas fa-question" color="grey" /></center> | <center><FontAwesomeIcon icon="fas fa-times-circle" color="grey" /></center> | <center>-</center> |
-    | <FontAwesomeIcon icon="fa-brands fa-chrome" fixedWidth /> Chrome OS  | <center><FontAwesomeIcon icon="fa-solid fa-flask-vial" color="green" /></center> | <center><FontAwesomeIcon icon="fas fa-question" color="grey" /></center> | <center><FontAwesomeIcon icon="fas fa-times-circle" color="grey" /></center> | <center>-</center> |
-    | <FontAwesomeIcon icon="fa-brands fa-apple" fixedWidth /> iOS/iPadOS | <center><FontAwesomeIcon icon="fa-solid fa-code-pull-request" /></center> | <center><FontAwesomeIcon icon="fas fa-question" color="grey" /></center> | <center><FontAwesomeIcon icon="fas fa-times-circle" color="grey" /></center> | <center><FontAwesomeIcon icon="fa-solid fa-code-pull-request" /></center> |
-    | <FontAwesomeIcon icon="fa-brands fa-apple" fixedWidth /> macOS      | <center><FontAwesomeIcon icon="fa-solid fa-flask-vial" color="green" /></center> | <center><FontAwesomeIcon icon="fas fa-question" color="grey" /></center> | <center><FontAwesomeIcon icon="fas fa-times-circle" color="grey" /></center> | <center><FontAwesomeIcon icon="fa-solid fa-code-pull-request" /></center> |
-    | <FontAwesomeIcon icon="fa-brands fa-ubuntu" fixedWidth /> Ubuntu     | <center><FontAwesomeIcon icon="fa-solid fa-flask-vial" color="green" /></center> | <center><FontAwesomeIcon icon="fas fa-question" color="grey" /></center> | <center><FontAwesomeIcon icon="fas fa-times-circle" color="grey" /></center> | <center>-</center> |
-    | <FontAwesomeIcon icon="fa-brands fa-windows" fixedWidth /> Windows    | <center><FontAwesomeIcon icon="fa-solid fa-flask-vial" color="green" /></center> | <center><FontAwesomeIcon icon="fas fa-question" color="grey" /></center> | <center><FontAwesomeIcon icon="fas fa-times-circle" color="grey" /></center> | <center>-</center> |
 
-    <FontAwesomeIcon icon="fa-solid fa-flask-vial" /> Experimental
-
-    <FontAwesomeIcon icon="fa-solid fa-code-pull-request" /> In Development
-
+    <EcosystemSupportTable />
   </TabItem>
     <TabItem value="app-pres-req" label="Digital Credentials API (Native)">
     ## Android
