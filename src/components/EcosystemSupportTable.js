@@ -1,5 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from '@docusaurus/Link';
 import supportData from '../pages/ecosystem-support.json';
 import styles from './EcosystemSupportTable.module.css';
 
@@ -71,10 +72,24 @@ export default function EcosystemSupportTable() {
       {textLegendItems.length > 0 && (
         <div className={styles.subLegend}>
           {textLegendItems.map((item, index) => (
-            <span key={index} className={styles.legendItem}>
+            <div key={index} className={styles.legendItem}>
               {item.superscript && <sup>{item.superscript}</sup>}
-              {item.text}
-            </span>
+              {Array.isArray(item.text)
+                ? item.text.map((part, partIndex) => {
+                    if (typeof part === 'string') {
+                      return <React.Fragment key={partIndex}>{part}</React.Fragment>;
+                    }
+                    if (part.href) {
+                      return (
+                        <Link key={partIndex} to={part.href}>
+                          {part.text}
+                        </Link>
+                      );
+                    }
+                    return null;
+                  })
+                : item.text}
+            </div>
           ))}
         </div>
       )}

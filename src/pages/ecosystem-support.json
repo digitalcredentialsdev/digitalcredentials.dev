@@ -4,19 +4,19 @@
     {
       "platform": { "name": "Android", "icon": "fa-brands fa-android" },
       "support": {
-        "Chrome": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation: v141", "color": "green", "iconPosition": "left" }, { "icon": "fa-solid fa-flask-vial", "text": "Issuance", "superscript": "1", "color": "grey", "iconPosition": "left" }],
-        "Edge": [{ "icon": "fa-solid fa-question", "text": "Unknown", "color": "grey" }],
+        "Chrome": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation (v141+)", "color": "green", "iconPosition": "left" }, { "icon": "fa-solid fa-flask-vial", "text": "Issuance", "color": "grey", "iconPosition": "left" }],
+        "Edge": [{ "icon": "fa-solid fa-code-pull-request", "text": "Planned", "color": "grey" }],
         "Firefox": [{ "icon": "fa-solid fa-times-circle", "text": "Not Supported", "color": "grey" }],
-        "Safari": null
+        "Safari": [{ "text": "n/a" }]
       }
     },
     {
       "platform": { "name": "Chrome OS", "icon": "fa-brands fa-chrome" },
       "support": {
-        "Chrome": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation: v141", "color": "green", "iconPosition": "left" }, { "icon": "fa-solid fa-flask-vial", "text": "Issuance", "color": "grey", "iconPosition": "left" }],
+        "Chrome": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation (v141+)", "color": "green", "iconPosition": "left" }, { "icon": "fa-solid fa-flask-vial", "text": "Issuance", "color": "grey", "iconPosition": "left" }],
         "Edge": [{ "text": "See Android", "color": "grey", "superscript": "2" }],
         "Firefox": [{ "text": "See Android", "color": "grey", "superscript": "2" }],
-        "Safari": null
+        "Safari": [{ "text": "n/a" }]
       }
     },
     {
@@ -25,34 +25,34 @@
         "Chrome": [{ "text": "See Safari", "superscript": "1" }],
         "Edge": [{ "text": "See Safari", "superscript": "1"}],
         "Firefox": [{ "text": "See Safari", "superscript": "1"}],
-        "Safari": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation: OS 26", "color": "green", "iconPosition": "left", "superscript": "3" }, { "icon": "fa-solid fa-question", "text": "Issuance: Unknown", "color": "grey", "iconPosition": "left" }]
+        "Safari": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation (OS 26+)", "color": "green", "iconPosition": "left", "superscript": "3" }, { "icon": "fa-solid fa-question", "text": "Issuance: Unknown", "color": "grey", "iconPosition": "left" }]
       }
     },
     {
       "platform": { "name": "macOS", "icon": "fa-brands fa-apple" },
       "support": {
-        "Chrome": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation: v141", "color": "green", "iconPosition": "left" }, { "icon": "fa-solid fa-flask-vial", "text": "Issuance", "superscript": "1", "color": "grey", "iconPosition": "left" }],
-        "Edge": [{ "icon": "fa-solid fa-question", "text": "Unknown", "color": "grey" }],
+        "Chrome": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation (v141+)", "color": "green", "iconPosition": "left" }, { "icon": "fa-solid fa-flask-vial", "text": "Issuance", "color": "grey", "iconPosition": "left" }],
+        "Edge": [{ "icon": "fa-solid fa-code-pull-request", "text": "Planned", "color": "grey" }],
         "Firefox": [{ "icon": "fa-solid fa-times-circle", "text": "Not Supported", "color": "grey" }],
-        "Safari": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation: OS 26", "color": "green", "iconPosition": "left", "superscript": "3" }, { "icon": "fa-solid fa-question", "text": "Issuance: Unknown", "color": "grey", "iconPosition": "left" }]
+        "Safari": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation (OS 26+)", "color": "green", "iconPosition": "left", "superscript": "3" }, { "icon": "fa-solid fa-question", "text": "Issuance: Unknown", "color": "grey", "iconPosition": "left" }]
       }
     },
     {
       "platform": { "name": "Ubuntu", "icon": "fa-brands fa-ubuntu" },
       "support": {
-        "Chrome": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation: v141", "color": "green", "iconPosition": "left" }, { "icon": "fa-solid fa-flask-vial", "text": "Issuance", "superscript": "1", "color": "grey", "iconPosition": "left" }],
-        "Edge": [{ "icon": "fa-solid fa-question", "text": "Unknown", "color": "grey" }],
+        "Chrome": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation (v141+)", "color": "green", "iconPosition": "left" }, { "icon": "fa-solid fa-flask-vial", "text": "Issuance", "color": "grey", "iconPosition": "left" }],
+        "Edge": [{ "icon": "fa-solid fa-code-pull-request", "text": "Planned", "color": "grey" }],
         "Firefox": [{ "icon": "fa-solid fa-times-circle", "text": "Not Supported", "color": "grey" }],
-        "Safari": null
+        "Safari": [{ "text": "n/a" }]
       }
     },
     {
       "platform": { "name": "Windows", "icon": "fa-brands fa-windows" },
       "support": {
-        "Chrome": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation: v141", "color": "green", "iconPosition": "left" }, { "icon": "fa-solid fa-flask-vial", "text": "Issuance", "superscript": "1", "color": "grey", "iconPosition": "left" }],
-        "Edge": [{ "icon": "fa-solid fa-question", "text": "Unknown", "color": "grey" }],
+        "Chrome": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation (v141+)", "color": "green", "iconPosition": "left" }, { "icon": "fa-solid fa-flask-vial", "text": "Issuance", "color": "grey", "iconPosition": "left" }],
+        "Edge": [{ "icon": "fa-solid fa-code-pull-request", "text": "Planned", "color": "grey" }],
         "Firefox": [{ "icon": "fa-solid fa-times-circle", "text": "Not Supported", "color": "grey" }],
-        "Safari": null
+        "Safari": [{ "text": "n/a" }]
       }
     }
   ],
@@ -66,7 +66,15 @@
     "superscripts": [
       { "superscript": "1", "text": "In most cases, all browsers on iOS/iPadOS use Safari's rendering engine (WebKit)" },
       { "superscript": "2", "text": "Other browsers run as Android apps on Chrome OS"},
-      { "superscript": "3", "text": "Limited protocol support" }
+      {
+        "superscript": "3",
+        "text": [
+          "Limited protocol support, see ",
+          { "text": "iOS", "href": "/docs/references/platforms/ios/" },
+          " | ",
+          { "text": "macOS", "href": "/docs/references/platforms/macos/" }
+        ]
+      }
     ]
   }
 }
