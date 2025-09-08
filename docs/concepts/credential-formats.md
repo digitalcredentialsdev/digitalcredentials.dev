@@ -3,8 +3,6 @@ sidebar_position: 5
 title: "Credential Formats"
 ---
 
-# Credential Formats
-
 ## SD-JWT VC
 
 SD-JWT VC (Selective Disclosure JSON Web Token Verifiable Credentials) represents the Internet Engineering Task Force's approach to verifiable credentials, building upon the familiar JWT infrastructure while adding selective disclosure capabilities.

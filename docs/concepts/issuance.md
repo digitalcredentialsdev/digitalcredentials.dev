@@ -3,6 +3,6 @@ sidebar_position: 4
 title: "Issuance"
 ---
 
-# Digital Credential Issuance
+:::note
 
-> Coming Soon
+Coming Soon
