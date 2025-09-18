@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from '@docusaurus/Link';
-import supportData from '../pages/ecosystem-support.json';
+import supportData from '../pages/dcapi-support.json';
 import styles from './EcosystemSupportTable.module.css';
 
 const SupportStatus = ({ status }) => {

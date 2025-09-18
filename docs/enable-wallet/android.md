@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Android
 
-## Android Holder API
+## Android Credential Manager API
 
 ### Building the sample wallet app
 
