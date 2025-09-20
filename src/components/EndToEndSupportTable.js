@@ -1,7 +1,19 @@
 import React, { useState, useMemo } from 'react';
 import supportData from '../pages/endToEndSupport.json';
 import styles from './EndToEndSupportTable.module.css';
+
+// FontAwesome setup
+import { config, library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faApple, faMicrosoft, faAndroid, faUbuntu, faChrome, faSafari, faEdge } from '@fortawesome/free-brands-svg-icons';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+
+// Prevent FontAwesome from adding CSS automatically since it's being imported above
+config.autoAddCss = false;
+
+// Add icons to the library so they can be used globally
+library.add(faApple, faMicrosoft, faAndroid, faUbuntu, faChrome, faSafari, faEdge);
+
 
 const statusClass = (status) => {
   switch (status) {
@@ -18,13 +30,13 @@ const getOsIconProps = (os) => {
   switch (os) {
     case 'macOS':
     case 'iOS':
-      return ['fab', 'apple'];
+      return faApple;
     case 'Windows':
-      return ['fab', 'microsoft'];
+      return faMicrosoft;
     case 'Android':
-      return ['fab', 'android'];
+      return faAndroid;
     case 'Ubuntu':
-      return ['fab', 'ubuntu'];
+      return faUbuntu;
     default:
       return null;
   }
@@ -33,11 +45,11 @@ const getOsIconProps = (os) => {
 const getBrowserIconProps = (browser) => {
   switch (browser) {
     case 'Chrome':
-      return ['fab', 'chrome'];
+      return faChrome;
     case 'Safari':
-      return ['fab', 'safari'];
+      return faSafari;
     case 'Edge':
-      return ['fab', 'edge'];
+      return faEdge;
     default:
       return null;
   }
@@ -106,7 +118,7 @@ export default function EndToEndSupportTable() {
       {abbreviationItems.length > 0 && (
         <div className="card margin-bottom--lg">
           <div className="card__header">
-            <h4>Table Legend</h4>
+            <h3>Legend</h3>
           </div>
           <div className="card__body">
             <div className={styles.legend}>
