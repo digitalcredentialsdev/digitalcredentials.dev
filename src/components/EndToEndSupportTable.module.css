@@ -1,0 +1,63 @@
+.statusBadge {
+  border-radius: 0.75rem; /* 12px */
+  color: #ffffff;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.25rem 0.5rem; /* 4px 8px */
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.statusSupported {
+  background-color: green;
+}
+
+.statusNotSupported {
+  background-color: red;
+}
+
+.cellCentered {
+  text-align: center;
+}
+
+.sortableHeader {
+  cursor: pointer;
+  user-select: none;
+}
+
+.ascending::after {
+  content: ' ▲';
+  font-size: 0.8em;
+}
+
+.descending::after {
+  content: ' ▼';
+  font-size: 0.8em;
+}
+
+.legend {
+  margin-top: 1rem;
+  font-size: 0.9em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legendItem {
+}
+
+.divider {
+}
+
+.noWrapCell {
+  white-space: nowrap;
+}
+
+@media (max-width: 996px) {
+  .noWrapCell {
+    white-space: normal;
+  }
+}

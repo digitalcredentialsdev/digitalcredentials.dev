@@ -6,6 +6,7 @@ hide_table_of_contents: true
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 import DigitalCredentialsApiSupportTable from "@site/src/components/DigitalCredentialsApiSupportTable";
+import EndToEndSupportTable from "@site/src/components/EndToEndSupportTable";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 # Ecosystem Support
@@ -15,15 +16,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
     The Digital Credentials Web Platform API
 
     <DigitalCredentialsApiSupportTable />
-  </TabItem>
-    <TabItem value="app-pres-req" label="Digital Credentials API (Native)">
-
-    > Coming Soon
 
   </TabItem>
-  <TabItem value="app-wallet" label="Credential Manager APIs">
+  <TabItem value="end2end" label="End-to-End">
+    The table below conveys end-to-end combinations of operating systems, browsers, protocols, and credential managers.
 
-    > Coming Soon
+    A couple of notes about the table:
 
-  </TabItem>
+      - Browsers which do not support the Digital Credentials API are not listed (see the [Digital Credentials API (Web) tab](ecosystem-support?support-matrix=dc-api)).
+      - Client OS refers to the device where the Digital Credentials API is called.
+  <EndToEndSupportTable />
+    </TabItem>
 </Tabs>

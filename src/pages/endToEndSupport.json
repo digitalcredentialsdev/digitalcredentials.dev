@@ -1,0 +1,197 @@
+{
+    "headers": [
+        "Client OS",
+        "Client Browser",
+        "Type & Flow",
+        "Protocol",
+        "CM Device",
+        "CM",
+        "Status",
+        "Reason"
+    ],
+    "rows": [
+        {
+            "clientOs": "Android",
+            "clientBrowser": "Any",
+            "typeFlow": "XDP",
+            "credentialManagerDevice": "Any",
+            "credentialManager": "Any",
+            "protocol": "Any",
+            "status": "NOT SUPPORTED",
+            "reason": "Android does not currently support presentation from a credential manager on another device."
+        },
+        {
+            "clientOs": "iOS",
+            "clientBrowser": "Any",
+            "typeFlow": "XDP",
+            "credentialManagerDevice": "Any",
+            "credentialManager": "Any",
+            "protocol": "Any",
+            "status": "NOT SUPPORTED",
+            "reason": "iOS does not currently support presentation from a credential manager on another device."
+        },
+        {
+            "clientOs": "macOS",
+            "clientBrowser": "Safari",
+            "typeFlow": "XDP",
+            "credentialManagerDevice": "iOS",
+            "credentialManager": "Any (incl. AW)",
+            "protocol": "Annex C",
+            "status": "SUPPORTED",
+            "reason": ""
+        },
+        {
+            "clientOs": "macOS",
+            "clientBrowser": "Safari",
+            "typeFlow": "XDP",
+            "credentialManagerDevice": "Android",
+            "credentialManager": "Any",
+            "protocol": "Annex C",
+            "status": "SUPPORTED",
+            "reason": ""
+        },
+        {
+            "clientOs": "macOS",
+            "clientBrowser": "Safari",
+            "typeFlow": "XDP",
+            "credentialManagerDevice": "Android",
+            "credentialManager": "Any (incl. GW & SW)",
+            "protocol": "OID4VP",
+            "status": "NOT SUPPORTED",
+            "reason": "Safari and macOS will only allow ISO 18013-7 Annex C requests, which prevents any other protocol request from reaching another device. No workaround available."
+        },
+        {
+            "clientOs": "macOS",
+            "clientBrowser": "Chrome",
+            "typeFlow": "XDP",
+            "credentialManagerDevice": "iOS",
+            "credentialManager": "Any (incl. AW)",
+            "protocol": "Any",
+            "status": "SUPPORTED",
+            "reason": "Chrome implements the cross-device protocol directly and doesn't restrict protocol usage, but keep in mind iOS itself only supports Annex C."
+        },
+        {
+            "clientOs": "macOS",
+            "clientBrowser": "Chrome",
+            "typeFlow": "XDP",
+            "credentialManagerDevice": "Android",
+            "credentialManager": "Any (incl. GW & SW)",
+            "protocol": "Any",
+            "status": "SUPPORTED",
+            "reason": "Chrome implements the cross-device protocol directly and doesn't restrict protocol usage."
+        },
+        {
+            "clientOs": "macOS",
+            "clientBrowser": "Edge",
+            "typeFlow": "XDP",
+            "credentialManagerDevice": "iOS",
+            "credentialManager": "Any (incl. AW)",
+            "protocol": "Any",
+            "status": "SUPPORTED",
+            "reason": "Edge implements the cross-device protocol directly and doesn't restrict protocol usage, but keep in mind iOS itself only supports Annex C."
+        },
+        {
+            "clientOs": "macOS",
+            "clientBrowser": "Edge",
+            "typeFlow": "XDP",
+            "credentialManagerDevice": "Android",
+            "credentialManager": "Any (incl. GW & SW)",
+            "protocol": "Any",
+            "status": "SUPPORTED",
+            "reason": "Edge implements the cross-device protocol directly and doesn't restrict protocol usage."
+        },
+        {
+            "clientOs": "Ubuntu",
+            "clientBrowser": "Chrome",
+            "typeFlow": "XDP",
+            "credentialManagerDevice": "iOS",
+            "credentialManager": "Any (incl. AW)",
+            "protocol": "Annex C",
+            "status": "SUPPORTED",
+            "reason": "Chrome implements the cross-device protocol directly on Ubuntu and does not restrict protocols but iOS itself only supports Annex C."
+        },
+        {
+            "clientOs": "Ubuntu",
+            "clientBrowser": "Chrome",
+            "typeFlow": "XDP",
+            "credentialManagerDevice": "Android",
+            "credentialManager": "Any (incl. GW & SW)",
+            "protocol": "Any",
+            "status": "SUPPORTED",
+            "reason": "Chrome implements the cross-device protocol directly on Ubuntu"
+        },
+        {
+            "clientOs": "Ubuntu",
+            "clientBrowser": "Edge",
+            "typeFlow": "XDP",
+            "credentialManagerDevice": "iOS",
+            "credentialManager": "Any (incl. AW)",
+            "protocol": "Annex C",
+            "status": "SUPPORTED",
+            "reason": "Edge implements the cross-device protocol directly on Ubuntu and does not restrict protocols but iOS itself only supports Annex C."
+        },
+        {
+            "clientOs": "Ubuntu",
+            "clientBrowser": "Edge",
+            "typeFlow": "XDP",
+            "credentialManagerDevice": "Android",
+            "credentialManager": "Any (incl. GW & SW)",
+            "protocol": "Any",
+            "status": "SUPPORTED",
+            "reason": "Edge implements the cross-device protocol directly on Ubuntu"
+        },
+        {
+            "clientOs": "Windows",
+            "clientBrowser": "Chrome",
+            "typeFlow": "XDP",
+            "credentialManagerDevice": "iOS",
+            "credentialManager": "Any (incl. AW)",
+            "protocol": "Annex C",
+            "status": "SUPPORTED",
+            "reason": "Chrome implements the cross-device protocol directly on Windows and does not restrict protocols but iOS itself only supports Annex C."
+        },
+        {
+            "clientOs": "Windows",
+            "clientBrowser": "Chrome",
+            "typeFlow": "XDP",
+            "credentialManagerDevice": "Android",
+            "credentialManager": "Any (incl. GW & SW)",
+            "protocol": "Any",
+            "status": "SUPPORTED",
+            "reason": "Chrome implements the cross-device protocol directly on Windows"
+        },
+        {
+            "clientOs": "Windows",
+            "clientBrowser": "Edge",
+            "typeFlow": "XDP",
+            "credentialManagerDevice": "iOS",
+            "credentialManager": "Any (incl. AW)",
+            "protocol": "Annex C",
+            "status": "SUPPORTED",
+            "reason": "Edge implements the cross-device protocol directly on Windows and does not restrict protocols but iOS itself only supports Annex C."
+        },
+        {
+            "clientOs": "Windows",
+            "clientBrowser": "Edge",
+            "typeFlow": "XDP",
+            "credentialManagerDevice": "Android",
+            "credentialManager": "Any (incl. GW & SW)",
+            "protocol": "Any",
+            "status": "SUPPORTED",
+            "reason": "Edge implements the cross-device protocol directly on Windows"
+        }
+    ],
+    "legend": {
+        "abbreviations": {
+            "AW": "Apple Wallet",
+            "GW": "Google Wallet",
+            "SW": "Samsung Wallet",
+            "CM": "Credential Manager",
+            "XDP": "Cross-Device Presentation",
+            "XDI": "Cross-Device Issuance",
+            "SDP": "Same-Device Presentation",
+            "SDI": "Same-Device Issuance",
+            "Annex C": "ISO 18013-7 Annex C"
+        }
+    }
+}
