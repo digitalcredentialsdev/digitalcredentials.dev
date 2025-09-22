@@ -97,7 +97,7 @@ const columnConfig = [
   { header: 'CM Device', key: 'credentialManagerDevice' },
   { header: 'CM', key: 'credentialManager' },
   { header: 'Status', key: 'status' },
-  { header: 'Reason & Solution', key: 'reason' },
+  { header: 'Notes', key: 'reason' },
 ];
 
 export default function EndToEndSupportTable() {

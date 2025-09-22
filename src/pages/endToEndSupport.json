@@ -17,8 +17,8 @@
             "credentialManagerDevice": "Any",
             "credentialManager": "Any",
             "protocol": "Any",
-            "status": "NOT SUPPORTED",
-            "reason": "Android does not currently support presentation from a credential manager on another device."
+            "status": "SUPPORTED",
+            "reason": "Android supports cross-device presentation from another device when there is no credential available locally that can satisfy the request. This experience supports all protocols but but keep in mind iOS only supports Annex C."
         },
         {
             "clientOs": "iOS",
