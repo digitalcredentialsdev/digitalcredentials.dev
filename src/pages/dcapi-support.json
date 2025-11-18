@@ -64,7 +64,7 @@
       { "icon": "fa-solid fa-times-circle", "text": "Not Supported" }
     ],
     "superscripts": [
-      { "superscript": "1", "text": "In most cases, all browsers on iOS/iPadOS use Safari's rendering engine (WebKit)" },
+      { "superscript": "1", "text": "All browsers on iOS/iPadOS use Safari's rendering engine (WebKit)" },
       { "superscript": "2", "text": "Other browsers run as Android apps on Chrome OS"},
       {
         "superscript": "3",
