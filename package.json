@@ -23,7 +23,7 @@
     "@fortawesome/free-regular-svg-icons": "^7.1.0",
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "@fortawesome/react-fontawesome": "^3.1.1",
-    "@mdx-js/react": "^3.0.0",
+    "@mdx-js/react": "^3.1.1",
     "clsx": "^2.0.0",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
@@ -33,9 +33,9 @@
     "@docusaurus/eslint-plugin": "^3.9.2",
     "@docusaurus/module-type-aliases": "^3.9.2",
     "@docusaurus/types": "^3.9.2",
-    "@eslint/js": "^9.27.0",
-    "eslint": "^8.57.1",
-    "globals": "^16.2.0"
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0"
   },
   "browserslist": {
     "production": [
