@@ -100,7 +100,7 @@ const config = {
           to: "license"
         }
       ],
-      copyright: `© 2025 | digitalcredentials.dev is maintained by the W3C Web Identity & Credentials Adoption CG`,
+      copyright: `© 2026 | digitalcredentials.dev is maintained by the W3C Web Identity & Credentials Adoption CG`,
     },
     prism: {
       theme: prismThemes.github,
