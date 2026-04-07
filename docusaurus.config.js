@@ -24,7 +24,13 @@ const config = {
   projectName: 'digitalcredentials.dev', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
+  themes: ['@docusaurus/theme-mermaid'],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -106,10 +112,6 @@ const config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-    markdown: {
-      mermaid: true,
-    },
-    themes: ['@docusaurus/theme-mermaid'],
   }
 };
 
