@@ -6,14 +6,14 @@ title: "Three Party Model"
 The **three-party model**, also known as the **Issuer-Holder-Verifier** (IHV) model or "triangle of trust", is the foundational architecture behind verifiable digital credentials.
 It describes how credentials are issued, held, and verified across three distinct roles, without requiring direct communication between the issuer and verifier at the time of verification.
 
-This model represents a deliberate departure from traditional federated identity systems.
+This model represents a deliberate departure from traditional federated identity systems, which can improve privacy and reliability.
 
 ## The three roles
 
 ### Issuer
 
 The **issuer** is the entity that makes claims about a subject and creates a verifiable digital credential containing those claims.
-The issuer cryptographically signs the credential, binding the claims to its identity.
+The issuer cryptographically signs the credential, which makes it possible to check that the credential really came from the issuer and not someone else.
 
 Examples of issuers include:
 
@@ -62,7 +62,7 @@ Consider a job application scenario:
 1. **Presentation**: When applying for a job, the employer (verifier) requests a verifiable presentation containing the degree credential and sends it to the employer (verifier).
 1. **Verification**: The employer cryptographically verifies the credential's signature, checks its validity, and confirms the necessary claims, all without calling the university.
 
-This mirrors how physical credentials work in the real world. When you show your driving's license to a bartender, they inspect the card itself, they don't call the DMV.
+This mirrors how physical credentials work in the real world. When you show your driving license to a bartender, they inspect the card itself, they don't call the DMV.
 
 ## Comparison with federated identity
 
@@ -78,7 +78,7 @@ This is easy and it works, but it has structural consequences:
 - **The IdP is always online and involved.** Every time a relying party needs to verify your identity, it contacts the IdP in real time.
 If the IdP goes down, authentication breaks.
 - **The IdP sees every transaction.** Because the IdP brokers every interaction, it knows which services you use and when you use them.
-This creates a centralized record of your activity.
+This means the IdP can create a centralized record of your activity.
 - **The holder has limited control.** The IdP decides what claims to release and to whom.
 The user may consent, but they don't independently control the flow of their own attributes.
 - **Issuance and verification are coupled.** In federation, the entity that asserts your identity (the IdP) is the same entity that authenticates you to relying parties.
