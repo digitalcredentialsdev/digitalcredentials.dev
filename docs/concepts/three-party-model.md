@@ -6,7 +6,7 @@ title: "Three Party Model"
 The **three-party model**, also known as the **Issuer-Holder-Verifier** (IHV) model or "triangle of trust", is the foundational architecture behind verifiable digital credentials.
 It describes how credentials are issued, held, and verified across three distinct roles, without requiring direct communication between the issuer and verifier at the time of verification.
 
-This model represents a deliberate departure from traditional federated identity systems, which can improve privacy and reliability.
+This model represents a deliberate departure from traditional, two party federated identity systems, which can improve privacy and reliability.
 
 ## The three roles
 
@@ -59,26 +59,26 @@ Consider a job application scenario:
 
 1. **Issuance**: A university (issuer) creates a verifiable digital credential representing a degree and delivers it to the graduate (holder).
 1. **Storage**: The graduate stores the credential in their credential manager.
-1. **Presentation**: When applying for a job, the employer (verifier) requests a verifiable presentation containing the degree credential and sends it to the employer (verifier).
+1. **Presentation**: When applying for a job, the employer (verifier) requests a verifiable presentation containing the degree credential, the holder approves the request in their credential manager, which returns it to the employer (verifier).
 1. **Verification**: The employer cryptographically verifies the credential's signature, checks its validity, and confirms the necessary claims, all without calling the university.
 
-This mirrors how physical credentials work in the real world. When you show your driving license to a bartender, they inspect the card itself, they don't call the DMV.
+This mirrors how physical credentials work in the real world. When you show your driving license to a bartender, they inspect the card itself, they don't call the driving license issuer (DMV, RMV, vehicle registrar, etc).
 
-## Comparison with federated identity
+## Comparison with the centralized IdP/Relying Party model
 
-The three-party model is a deliberate architectural shift from **federated identity** systems like SAML and OpenID Connect (OIDC).
+The three-party model is a deliberate architectural shift from traditional federated identity systems like SAML and OpenID Connect (OIDC).
 Understanding the differences helps clarify why verifiable digital credentials exist.
 
-### Federated identity (two-party model)
+### Centralized IdP/Relying Party model
 
-In federation, an **Identity Provider (IdP)** sits in the middle of every transaction.
+In traditional federation, an **Identity Provider (IdP)** sits in the middle of every transaction.
 When you click "Sign in with XYZ," the service you're logging into (the Relying Party) redirects you to XYZ (the IdP), which authenticates you and sends an assertion back to the service.
 This is easy and it works, but it has structural consequences:
 
 - **The IdP is always online and involved.** Every time a relying party needs to verify your identity, it contacts the IdP in real time.
 If the IdP goes down, authentication breaks.
 - **The IdP sees every transaction.** Because the IdP brokers every interaction, it knows which services you use and when you use them.
-This means the IdP can create a centralized record of your activity.
+This means the IdP can create a centralized record of your activity (in some jurisdictions and use cases, this is disallowed by laws and regulations)
 - **The holder has limited control.** The IdP decides what claims to release and to whom.
 The user may consent, but they don't independently control the flow of their own attributes.
 - **Issuance and verification are coupled.** In federation, the entity that asserts your identity (the IdP) is the same entity that authenticates you to relying parties.
@@ -91,13 +91,13 @@ The three-party model decouples the IdP into two independent roles: the **issuer
 - **No phone-home requirement.** The verifier checks the credential's cryptographic proof locally.
 The issuer doesn't need to be online, and doesn't learn when or where the credential is used.
 - **Holder-mediated flow.** The holder decides what to share, with whom, and when.
-The issuer is not in the loop at presentation time. This eliminates the centralized visibility that federation creates.
+The issuer is not in the loop at presentation time.
 - **Selective disclosure.** Through mechanisms like zero-knowledge proofs or selective disclosure, the holder can reveal only specific claims from a credential, for example, proving they are over 18 without revealing their exact date of birth.
 - **Offline verification.** Because verification relies on cryptographic proofs rather than real-time API calls, credentials can be verified without network access.
 
 ### Summary of differences
 
-|                                        | Federated identity             | Verifiable digital credentials                                |
+|                                        | IdP/Relying Party model        | Verifiable digital credentials                                |
 | -------------------------------------- | ------------------------------ | ------------------------------------------------------------- |
 | **Architecture**                       | Two-party: IdP ↔ Relying Party | Three-party: Issuer → Holder → Verifier (RP)                  |
 | **Issuer involvement at verification** | Always (real-time)             | Never (after issuance)                                        |
@@ -119,4 +119,4 @@ This might involve:
 - Consulting a governance framework or accreditation list
 - Applying internal business rules about which credentials to accept
 
-This is analogous to how a bar trusts a driving license: not because it contacts the DMV, but because it recognizes the format, security features, and issuing authority.
+This is analogous to how a bar trusts a driving license: not because it contacts the the driving license issuer (DMV, RMV, vehicle registrar, etc), but because it recognizes the format, security features, and issuing authority.
