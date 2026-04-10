@@ -1,0 +1,3 @@
+CBOR
+COSE
+unlinkability
