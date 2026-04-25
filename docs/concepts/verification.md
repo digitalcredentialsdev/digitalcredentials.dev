@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 title: "Credential Verification"
 ---
 
@@ -36,6 +36,10 @@ The verifier confirms that the entity presenting the credential is the same enti
 This is typically accomplished through a cryptographic proof: the holder demonstrates control of a private key that is bound to the credential.
 Without this step, a stolen or forwarded credential could be used by someone other than the intended subject.
 
+:::note
+The term "holder binding" can also refer to human-to-credential binding within the credential manager (e.g., ensuring the individual to whom the credential was issued is the same person presenting it).
+:::
+
 ## The role of the verifier
 
 A verifier is any entity that needs to confirm a claim about a person or organization.
@@ -66,8 +70,7 @@ A credential might be cryptographically valid but issued by an entity the verifi
 
 ### What a verifier is not
 
-A verifier does not issue credentials.
-It does not store credentials on behalf of the holder.
+A verifier does not store credentials on behalf of the holder.
 And in most architectures, the verifier does not need to contact the issuer at the time of verification, the credential itself contains everything needed to validate the issuer's signature.
 This is a key difference from federated identity models, where the relying party typically calls back to the identity provider in real time.
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 title: "Credential Issuance"
 ---
 
@@ -25,7 +25,7 @@ The rigor of this step directly affects the trustworthiness of the resulting cre
 
 ### Credential construction
 
-The issuer assembles the credential data, the claims about the subject, metadata such as expiration dates and credential type, and any information needed for later status checks. 
+The issuer assembles the credential data, the claims about the subject, metadata such as expiration dates and credential type, and any information needed for later status checks.
 The structure and encoding of this data depend on the [credential format](/docs/concepts/credential-formats) in use.
 
 ### Cryptographic signing
@@ -60,7 +60,7 @@ An issuer that rubber-stamps claims without verification undermines the entire t
 **Protect signing keys.**
 The issuer's private key is the root of trust for every credential it issues.
 If the key is compromised, an attacker could forge credentials that appear legitimate.
-Issuers must use appropriate key management practices — hardware security modules, key rotation policies, and access controls — commensurate with the sensitivity of the credentials they issue.
+Issuers must use appropriate key management practices, such as hardware security modules, key rotation policies, and access controls, commensurate with the sensitivity of the credentials they issue.
 
 **Publish verification material.**
 For verifiers to validate a credential's signature, they need access to the issuer's public key or verification method.
@@ -68,7 +68,8 @@ Issuers are responsible for making this material available, whether through a we
 Without it, verifiers cannot confirm that a credential is genuine.
 
 **Manage credential status.**
-Credentials sometimes need to be revoked or suspended after issuance — a license may be suspended, an employee may leave an organization, or a credential may have been issued in error.
+Credentials sometimes need to be revoked or suspended after issuance.
+For example, a license may be suspended, an employee may leave an organization, or a credential may have been issued in error.
 The issuer is responsible for maintaining a mechanism that allows verifiers to check whether a credential is still valid.
 Common approaches include status lists and revocation registries.
 
