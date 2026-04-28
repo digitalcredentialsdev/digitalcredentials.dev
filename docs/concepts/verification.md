@@ -4,7 +4,6 @@ title: "Credential Verification"
 ---
 
 Verification is the process by which a party determines whether a verifiable digital credential is authentic, unaltered, and suitable for a given use.
-It is one of the three core operations in the credential lifecycle, alongside [issuance](/docs/concepts/issuance), and presentation.
 
 In the [three-party model](/docs/concepts/three-party-model), the **verifier** is the entity that receives a credential presentation and evaluates it.
 A verifier might be a website checking a user's age, an employer confirming a professional license, or a store requesting a loyalty card.

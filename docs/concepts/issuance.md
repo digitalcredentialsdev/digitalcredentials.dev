@@ -4,7 +4,6 @@ title: "Credential Issuance"
 ---
 
 Issuance is the process by which a trusted authority creates a verifiable digital credential and provides it to a holder.
-It is one of the three core operations in the credential lifecycle, alongside presentation and [verification](/docs/concepts/verification).
 
 In the [three-party model](/docs/concepts/three-party-model), the **issuer** is the entity that asserts claims about a subject and produces a cryptographically signed credential attesting to those claims.
 An issuer might be a government agency issuing a mobile driving license, a university issuing a digital diploma, or an employer issuing a proof of employment.
@@ -21,11 +20,11 @@ How this happens depends on the type of credential.
 A government agency might verify identity through an in-person visit or an existing identity proofing process.
 A university confirms that a student has completed a degree program.
 An employer checks employment records.
-The rigor of this step directly affects the trustworthiness of the resulting credential.
+The rigor of this step directly affects the trustworthiness of the resulting credential, and some ecosystems may require certification of issuers.
 
 ### Credential construction
 
-The issuer assembles the credential data, the claims about the subject, metadata such as expiration dates and credential type, and any information needed for later status checks.
+The issuer assembles the credential data, the claims about the subject, metadata such as expiration dates, credential type, visual display data like logos and colors, and any information needed for later status checks.
 The structure and encoding of this data depend on the [credential format](/docs/concepts/credential-formats) in use.
 
 ### Cryptographic signing
