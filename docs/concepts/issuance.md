@@ -39,7 +39,7 @@ Some use JSON Web Signatures, others use schemes designed for selective disclosu
 ### Delivery to the holder
 
 Once signed, the credential is delivered to the holder for storage in their credential manager.
-The delivery mechanism varies: it might happen over a direct protocol exchange in the credential manager, through a web browser ("Save to my wallet"), or even via a emailed download link.
+The delivery mechanism varies: it might happen over a direct protocol exchange in the credential manager, through a web browser ("Save to my wallet"), or even via an emailed download link.
 What matters is that the holder ends up with a copy of the credential that they control and can present independently of the issuer.
 
 ## The role of the issuer
