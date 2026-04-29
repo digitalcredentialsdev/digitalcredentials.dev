@@ -79,12 +79,18 @@ Clear, well-documented credential schemas help verifiers understand what a crede
 
 ### What an issuer is not
 
-An issuer does not control how or when a holder uses a credential after issuance.
 Once the credential is delivered to the holder's credential manager, the holder decides which verifiers to present it to and under what circumstances.
 The issuer also does not participate in the presentation or verification process: the credential is designed to be verifiable without contacting the issuer in real time.
 
 This separation is a key design principle.
 It protects holder privacy by preventing the issuer from tracking where and when credentials are used, and it allows the system to function even when the issuer is offline.
+
+:::note
+
+While issuers do not participate in real-time transactions, usage constraints may still be governed by trust frameworks or issuer policies.
+These rules, such as restrictions on which verifiers are "trusted" or which attributes may be shared, are established via governance or metadata, independent of the presentation ceremony itself.
+
+:::
 
 ## Trust and issuer authority
 
