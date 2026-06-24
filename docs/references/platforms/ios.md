@@ -24,5 +24,6 @@ Apple platforms only support the following document types via the Digital Creden
 - `org.iso.23220.1.jp.mnc` (Japan MyNumber card)
 - `org.iso.23220.photoid.1` (general photo ID)
 - `eu.europa.ec.eudi.pid.1` (EU personal ID card)
+- `eu.europa.ec.av.1` (EU age verification credential)
 
 To support additional doc types, insecure methods like custom schemes must be used.
