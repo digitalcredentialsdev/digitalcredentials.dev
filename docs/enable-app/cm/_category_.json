@@ -1,6 +1,6 @@
 {
-  "label": "Enable a Wallet",
-  "position": 6,
+  "label": "Credential Manager",
+  "position": 1,
   "link": {
     "type": "generated-index"
   }
