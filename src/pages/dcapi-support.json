@@ -5,7 +5,7 @@
       "platform": { "name": "Android", "icon": "fa-brands fa-android" },
       "support": {
         "Chrome": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation (v141+)", "color": "green", "iconPosition": "left" }, { "icon": "fa-solid fa-flask-vial", "text": "Issuance", "color": "grey", "iconPosition": "left", "superscript": "4" }],
-        "Edge": [{ "icon": "fa-solid fa-flask-vial", "text": "Presentation (v141+)", "color": "grey", "superscript": "4" }, { "icon": "fa-solid fa-flask-vial", "text": "Issuance (v141+)", "color": "grey", "superscript": "4" }],
+        "Edge": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation (v141+)", "color": "green" }, { "icon": "fa-solid fa-flask-vial", "text": "Issuance (v141+)", "color": "grey", "superscript": "4" }],
         "Firefox": [{ "icon": "fa-solid fa-code-pull-request", "text": "In Development", "color": "grey" }],
         "Safari": [{ "text": "n/a" }]
       }
@@ -33,7 +33,7 @@
       "support": {
         "Chrome": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation (v141+)", "color": "green", "iconPosition": "left" }, { "icon": "fa-solid fa-flask-vial", "text": "Issuance (v141+)", "color": "grey", "iconPosition": "left", "superscript": "4"}],
         "Edge": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation (v141+)", "color": "green", "iconPosition": "left" }, { "icon": "fa-solid fa-flask-vial", "text": "Issuance (v141+)", "color": "grey", "iconPosition": "left", "superscript": "4" }],
-        "Firefox": [{ "icon": "fa-solid fa-code-pull-request", "text": "In Development", "color": "grey" }],
+        "Firefox": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation (v149+)", "color": "green", "iconPosition": "left", "superscript": "3" }],
         "Safari": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation (OS 26+)", "color": "green", "iconPosition": "left", "superscript": "3" }, { "icon": "fa-solid fa-question", "text": "Issuance: Unknown", "color": "grey", "iconPosition": "left" }]
       }
     },
@@ -50,8 +50,8 @@
       "platform": { "name": "Windows", "icon": "fa-brands fa-windows" },
       "support": {
         "Chrome": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation (v141+)", "color": "green", "iconPosition": "left" }, { "icon": "fa-solid fa-flask-vial", "text": "Issuance", "color": "grey", "iconPosition": "left", "superscript": "4" }],
-        "Edge": [{ "icon": "fa-solid fa-code-pull-request", "text": "Planned", "color": "grey" }],
-        "Firefox": [{ "icon": "fa-solid fa-code-pull-request", "text": "In Development", "color": "grey" }],
+        "Edge": [{ "icon": "fa-solid fa-check-circle", "text": "Presentation (v141+)", "color": "green", "iconPosition": "left" }, { "icon": "fa-solid fa-flask-vial", "text": "Issuance", "color": "grey", "iconPosition": "left", "superscript": "4" }],
+        "Firefox": [{ "icon": "fa-solid fa-code-pull-request", "text": "In Development", "color": "grey", "superscript": "5" }],
         "Safari": [{ "text": "n/a" }]
       }
     }
@@ -75,7 +75,8 @@
           { "text": "macOS", "href": "/docs/references/platforms/macos/" }
         ]
       },
-      { "superscript": "4", "text": "Behind a feature flag"}
+      { "superscript": "4", "text": "Behind a feature flag"},
+      { "superscript": "5", "text": "Awaiting underlying platform support"}
     ]
   }
 }

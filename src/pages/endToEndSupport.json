@@ -16,7 +16,7 @@
             "typeFlow": "XDP",
             "credentialManagerDevice": "Any",
             "credentialManager": "Any",
-            "protocol": "Any",
+            "protocol": "OID4VP & Annex C",
             "status": "SUPPORTED",
             "reason": "Android supports cross-device presentation from another device when there is no credential available locally that can satisfy the request. This experience supports all protocols but but keep in mind iOS only supports Annex C."
         },
@@ -66,9 +66,9 @@
             "typeFlow": "XDP",
             "credentialManagerDevice": "iOS",
             "credentialManager": "Any (incl. AW)",
-            "protocol": "Any",
+            "protocol": "Annex C",
             "status": "SUPPORTED",
-            "reason": "Chrome implements the cross-device protocol directly and doesn't restrict protocol usage, but keep in mind iOS itself only supports Annex C."
+            "reason": "Chrome implements the cross-device protocol directly and doesn't restrict protocol usage."
         },
         {
             "clientOs": "macOS",
@@ -76,7 +76,7 @@
             "typeFlow": "XDP",
             "credentialManagerDevice": "Android",
             "credentialManager": "Any (incl. GW & SW)",
-            "protocol": "Any",
+            "protocol": "OID4VP & Annex C",
             "status": "SUPPORTED",
             "reason": "Chrome implements the cross-device protocol directly and doesn't restrict protocol usage."
         },
@@ -86,9 +86,9 @@
             "typeFlow": "XDP",
             "credentialManagerDevice": "iOS",
             "credentialManager": "Any (incl. AW)",
-            "protocol": "Any",
+            "protocol": "Annex C",
             "status": "SUPPORTED",
-            "reason": "Edge implements the cross-device protocol directly and doesn't restrict protocol usage, but keep in mind iOS itself only supports Annex C."
+            "reason": "Edge implements the cross-device protocol directly and doesn't restrict protocol usage."
         },
         {
             "clientOs": "macOS",
@@ -96,9 +96,39 @@
             "typeFlow": "XDP",
             "credentialManagerDevice": "Android",
             "credentialManager": "Any (incl. GW & SW)",
-            "protocol": "Any",
+            "protocol": "OID4VP & Annex C",
             "status": "SUPPORTED",
             "reason": "Edge implements the cross-device protocol directly and doesn't restrict protocol usage."
+        },
+        {
+            "clientOs": "macOS",
+            "clientBrowser": "Firefox",
+            "typeFlow": "XDP",
+            "credentialManagerDevice": "Android",
+            "credentialManager": "Any (incl. GW & SW)",
+            "protocol": "OID4VP",
+            "status": "NOT SUPPORTED",
+            "reason": "Firefox uses Apple's platform API and Apple platforms do not pass through any protocol other than Annex C. No workaround available."
+        },
+        {
+            "clientOs": "macOS",
+            "clientBrowser": "Firefox",
+            "typeFlow": "XDP",
+            "credentialManagerDevice": "Android",
+            "credentialManager": "Any",
+            "protocol": "Annex C",
+            "status": "SUPPORTED",
+            "reason": ""
+        },
+        {
+            "clientOs": "macOS",
+            "clientBrowser": "Firefox",
+            "typeFlow": "XDP",
+            "credentialManagerDevice": "iOS",
+            "credentialManager": "Any (incl. AW)",
+            "protocol": "Annex C",
+            "status": "SUPPORTED",
+            "reason": ""
         },
         {
             "clientOs": "Ubuntu",
@@ -116,7 +146,7 @@
             "typeFlow": "XDP",
             "credentialManagerDevice": "Android",
             "credentialManager": "Any (incl. GW & SW)",
-            "protocol": "Any",
+            "protocol": "OID4VP & Annex C",
             "status": "SUPPORTED",
             "reason": "Chrome implements the cross-device protocol directly on Ubuntu"
         },
@@ -136,7 +166,7 @@
             "typeFlow": "XDP",
             "credentialManagerDevice": "Android",
             "credentialManager": "Any (incl. GW & SW)",
-            "protocol": "Any",
+            "protocol": "OID4VP & Annex C",
             "status": "SUPPORTED",
             "reason": "Edge implements the cross-device protocol directly on Ubuntu"
         },
@@ -156,7 +186,7 @@
             "typeFlow": "XDP",
             "credentialManagerDevice": "Android",
             "credentialManager": "Any (incl. GW & SW)",
-            "protocol": "Any",
+            "protocol": "OID4VP & Annex C",
             "status": "SUPPORTED",
             "reason": "Chrome implements the cross-device protocol directly on Windows"
         },
@@ -176,7 +206,7 @@
             "typeFlow": "XDP",
             "credentialManagerDevice": "Android",
             "credentialManager": "Any (incl. GW & SW)",
-            "protocol": "Any",
+            "protocol": "OID4VP & Annex C",
             "status": "SUPPORTED",
             "reason": "Edge implements the cross-device protocol directly on Windows"
         }
@@ -191,6 +221,7 @@
             "XDI": "Cross-Device Issuance",
             "SDP": "Same-Device Presentation",
             "SDI": "Same-Device Issuance",
+            "OID4VP": "OpenID for Verifiable Presentations",
             "Annex C": "ISO 18013-7 Annex C"
         }
     }

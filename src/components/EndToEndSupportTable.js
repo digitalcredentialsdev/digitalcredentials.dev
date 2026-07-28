@@ -5,14 +5,14 @@ import styles from './EndToEndSupportTable.module.css';
 // FontAwesome setup
 import { config, library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faApple, faMicrosoft, faAndroid, faUbuntu, faChrome, faSafari, faEdge } from '@fortawesome/free-brands-svg-icons';
+import { faApple, faMicrosoft, faAndroid, faUbuntu, faChrome, faSafari, faEdge, faFirefox } from '@fortawesome/free-brands-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
 // Prevent FontAwesome from adding CSS automatically since it's being imported above
 config.autoAddCss = false;
 
 // Add icons to the library so they can be used globally
-library.add(faApple, faMicrosoft, faAndroid, faUbuntu, faChrome, faSafari, faEdge);
+library.add(faApple, faMicrosoft, faAndroid, faUbuntu, faChrome, faSafari, faEdge, faFirefox);
 
 
 const statusClass = (status) => {
@@ -50,6 +50,8 @@ const getBrowserIconProps = (browser) => {
       return faSafari;
     case 'Edge':
       return faEdge;
+    case 'Firefox':
+      return faFirefox;
     default:
       return null;
   }
